@@ -1,6 +1,5 @@
 package com.techproed;
 
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,13 +13,17 @@ public class Day04_GoogleTest {
         webDriver.manage().timeouts().implicitlyWait(1000, TimeUnit.MILLISECONDS);
 
         webDriver.get("http://google.com");
+
         WebElement aramaKutusu = webDriver.findElement(By.name("q"));
         aramaKutusu.sendKeys("city bike");
         aramaKutusu.submit();//enter gorevi gorur
+
         WebElement aramaSonucu = webDriver.findElement(By.id("result-stats"));
         System.out.println(aramaSonucu.getText());
+
         WebElement alisverisLinki = webDriver.findElement(By.partialLinkText("Alışveriş"));
         alisverisLinki.click();
+
         webDriver.quit();
     }
 }

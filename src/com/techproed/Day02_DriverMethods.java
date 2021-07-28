@@ -9,11 +9,15 @@ public class Day02_DriverMethods {
         WebDriver driver = new ChromeDriver();
 
         driver.get("http://google.com");
+
         driver.navigate().to("http://amazon.com");
+
         String sayfaTitle = driver.getTitle();//bulundugu sayfanin basligini alir
         System.out.println(sayfaTitle);
+
         String sayfaUrl = driver.getCurrentUrl();//url'ini alir
         System.out.println(sayfaUrl);
+
         driver.quit();
     }
 }

@@ -7,8 +7,8 @@ public class Day02_ifElse {
     public static void main(String[] args) {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\asus\\OneDrive\\Belgeler\\Selenium dependencies\\drives\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
-
         driver.manage().window().maximize();
+
         driver.get("http://amazon.com");
         String amazonTitle =  driver.getTitle();
 

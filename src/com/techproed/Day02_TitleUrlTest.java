@@ -9,7 +9,9 @@ public class Day02_TitleUrlTest {
         WebDriver webDriver = new ChromeDriver();
 
         webDriver.get("http://youtube.com");
+
         String youtubeTitle = webDriver.getTitle();
+
         if(youtubeTitle.contains("video")){
             System.out.println("video kelimesini iceriyor " );
         }else{
