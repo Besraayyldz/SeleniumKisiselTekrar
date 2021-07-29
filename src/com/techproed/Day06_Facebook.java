@@ -50,6 +50,6 @@ public class Day06_Facebook {
         }
         driver.quit();
 
-        // 1
+
     }
 }
